@@ -4,12 +4,28 @@
   <title>Sidebar</title>
 </head>
 <style>
-  .facility-button{
-    background-color: rgb(2,158,255);
+   button {
+    background-color: rgb(50, 38, 18);
+   }
+  .homenew-button{
+    
         color: white;
         border: none;
         height: 36px;
-        width: 100px;
+        width: 200px;
+        border-radius: 18px;
+        font-weight: bold;
+        font-size: 15px;
+        cursor: pointer;
+        transition: box-shadow 0.15s;
+  }
+
+  .facility-button{
+    
+        color: white;
+        border: none;
+        height: 36px;
+        width: 200px;
         border-radius: 18px;
         font-weight: bold;
         font-size: 15px;
@@ -18,11 +34,11 @@
   }
 
   .about-button{
-    background-color: rgb(2,158,255);
+    
         color: white;
         border: none;
         height: 36px;
-        width: 100px;
+        width: 200px;
         border-radius: 18px;
         font-weight: bold;
         font-size: 15px;
@@ -31,11 +47,11 @@
   }
 
   .doctor-button{
-    background-color: rgb(2,158,255);
+    
         color: white;
         border: none;
         height: 36px;
-        width: 100px;
+        width: 200px;
         border-radius: 18px;
         font-weight: bold;
         font-size: 15px;
@@ -44,11 +60,11 @@
   }
 
   .contact-button{
-    background-color: rgb(2,158,255);
+    
         color: white;
         border: none;
         height: 36px;
-        width: 100px;
+        width: 200px;
         border-radius: 18px;
         font-weight: bold;
         font-size: 15px;
@@ -57,16 +73,19 @@
   }
 
   .service-button{
-    background-color: rgb(2,158,255);
         color: white;
         border: none;
         height: 36px;
-        width: 100px;
+        width: 200px;
         border-radius: 18px;
         font-weight: bold;
         font-size: 15px;
         cursor: pointer;
         transition: box-shadow 0.15s;
+  }
+
+  .homenew-button:hover {
+    box-shadow: 5px 5px 10px rgba(0,0,0,0.2);
   }
 
   .facility-button:hover {
@@ -88,6 +107,10 @@
   .service-button:hover {
     box-shadow: 5px 5px 10px rgba(0,0,0,0.2);
   }
+  
+  .homenew-button:active {
+        opacity: 0.7;
+    }
 
   .facility-button:active {
         opacity: 0.7;
@@ -108,10 +131,20 @@
   .service-button:active {
         opacity: 0.7;
     }
-
+  
+  .logo {
+    padding-top: 20px;
+    width: 200px;
+    height: 150px;
+    font-weight: bolder;
+  }
 </style>
 <body>
   <!-- Sidebar content goes here -->
+  <a href="./homenew.html" target="content">
+    <button class="homenew-button">Home</button>
+  </a>
+  <br><br>
   <a href="./content.html" target="content">
     <button class="facility-button">Facilities</button>
   </a>
@@ -131,5 +164,7 @@
   <a href="./services.html" target="content">
     <button class="service-button">Services</button>
   </a>
+  <br><br>
+  <img src="./logo-removebg-preview.png" class="logo" alt="logo">
 </body>
 </html>

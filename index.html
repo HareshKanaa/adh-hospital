@@ -1,13 +1,19 @@
 <!DOCTYPE html>
 <html>
+  <style>
+    .head {
+      background-image: url("head.png");
+    }
+    
+  </style>
 <head>
   <title>Hospital Management System - Nephrology Department</title>
 </head>
-<frameset rows="20%, 80%">
-  <frame src="header.html" name="header" scrolling="no">
-  <frameset cols="20%, 80%">
-    <frame src="sidebar.html" name="sidebar">
-    <frame src="content.html" name="content">
+<frameset rows="18%, 80%">
+<frame src="header.html" class="head" name="header" noresize="noresize" style="background-color: rgb(157, 160, 247);" >
+  <frameset cols="18%, 80%">
+    <frame src="sidebar.html" name="sidebar" noresize="noresize" style="background-color: rgb(225, 215, 192) ;">
+    <frame src="homenew.html" name="content">
   </frameset>
 </frameset>
 </html>

@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Content</title>
+  <link rel="stylesheet" href="styles/styles.css">
+</head>
+
+<style>
+  body {
+    font-family: "Montserrat",Georgia, 'Times New Roman', Times, serif;
+  }
+  .container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 0.4em;
+    column-gap: 0.4em;
+    row-gap: 0.4em;
+    margin: auto 3em;
+    background-color: rgba(225, 215, 192, 0.7);
+    padding: 2.4em 0;
+  }
+  .facility {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0.5rem;
+    cursor: pointer;
+  }
+  .facility:hover {
+    transform: scale(1.1);
+    transition: all 0.3s ease-in-out;
+  }
+  .container h3 {
+    text-align: center;
+    font-size: 25px;
+    color: rgb(50, 38, 18);
+  }
+
+</style>
+
+<body style="margin: 0; padding: 0;">
+<main>
+  <h4 > Our Facilities </h4>
+</main>
+    <section class="container">
+    <div class="facility">
+      <img src="https://www.narayanahealth.org/sites/default/files/styles/our_specialities/public/orthopaedic-services.png?itok=vrgk0Rcg" alt="facilities" class="facility-img">
+      <h3>Orthopaedics</h3>
+      
+    </div>
+    <div class="facility">
+      <img src="https://www.narayanahealth.org/sites/default/files/styles/our_specialities/public/critical-care-services.png?itok=ZGeO7_Qr" alt="facilities" class="facility-img">
+      <h3>Critical Care</h3>
+    </div>
+    <div class="facility">
+      <img src="https://www.narayanahealth.org/sites/default/files/styles/our_specialities/public/cardiology-adult.png?itok=8qvE9gMq" alt="facilities" class="facility-img">
+      <h3>Cardiology-Adult</h3>
+    </div>
+    <div class="facility">
+      <img src="https://www.narayanahealth.org/sites/default/files/styles/our_specialities/public/adult-cardiac-surgery.png?itok=YjX21vA3" alt="facilities" class="facility-img">
+      <h3>Cardiac Surgery</h3>
+    </div>
+    <div class="facility">
+      <img src="https://www.narayanahealth.org/sites/default/files/styles/our_specialities/public/adult-kidney-transplant.png?itok=haf5twaN" alt="facilities" class="facility-img">
+      <h3>Kidney Transplant</h3>
+    </div>
+    <div class="facility">
+      <img src="https://www.narayanahealth.org/sites/default/files/styles/our_specialities/public/liver-transplant-surgery.png?itok=5KryCJrg" alt="facilities" class="facility-img">
+      <h3>Liver Transplant</h3>
+    </div>
+  </section>
+  <img src="images/facilities.jpg" class="background-img" alt="facilities">
+</body>
+</html>

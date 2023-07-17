@@ -4,13 +4,50 @@
   <title>About</title>
 </head>
 <link rel="stylesheet" href="styles/styles.css">
+<link rel="stylesheet" href="styles/carousal.css">
+<style>
+  .slider-wrapper {
+    position: relative;
+    max-width: 48em;
+    margin: 0 auto;
+  }
+  .slider img {
+    flex: 1 0 100%;
+    scroll-snap-align: start;
+    object-fit: contain;
+  }
+  .slider {
+    display: flex;
+    aspect-ratio: 16/9;
+    overflow-x: auto;  
+    scroll-snap-type: x mandatory;
+    scroll-behavior: smooth;
+    box-shadow: 0 1.5rem 3rem -0.75rem hsla(0, 0%, 0%, 0.25);
+    border-radius: 0.5rem;
+    -ms-overflow-style: none; /* Hide scrollbar IE and Edge */
+    scrollbar-width: none; /* Hide scrollbar Firefox */
+  }
+
+</style>
 <body>
   <!-- Content goes here -->
-  <p>Welcome to the <strong>Department at ADH Hospitals</strong>, a renowned medical institution committed to providing exceptional kidney care and comprehensive treatment options.</p>
-  <p>Our dedicated team of experienced nephrologists, nurses, and support staff are passionate about improving the lives of patients suffering from kidney-related disorders.</p>
-  <p>Equipped with state-of-the-art technology and cutting-edge facilities, our department offers a wide range of diagnostic services, innovative therapies, and personalized treatment plans to address various kidney conditions.</p>
-  <p>With a patient-centered approach, we strive to deliver compassionate care, promote early detection, and manage chronic kidney diseases through specialized interventions.</p>
-  <p>At ADH Hospitals' Nephrology Department, we aim to restore and enhance the renal health of our patients, ensuring their well-being and improved quality of life.</p>
-  <img src="images/hospital.png" class="hospital" alt="hospital">
+  <h4>
+    Feedback and Reviews
+  </h4>
+  <section class="container">
+    <div class="slider-wrapper">
+      <div class="slider">
+        <img id="slide-1" src="./images/feedback1.JPG">
+        <img id="slide-2" src="./images/feedback2.JPG">
+        <img id="slide-3" src="./images/feedback3.JPG">
+      </div>
+      <div class="slider-nav">
+        <a href="#slide-1"> </a>
+        <a href="#slide-2"> </a>
+        <a href="#slide-3"> </a>
+      </div>
+    </div>
+  </section>
+  <img src="images/hospital.png" class="background-img" alt="hospital">
 </body>
 </html>

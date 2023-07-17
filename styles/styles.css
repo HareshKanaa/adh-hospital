@@ -10,7 +10,9 @@ p {
     width: 1010px;
     height: 500px;
   }
-
+  body , frame {
+    background-color: rgb(225, 215, 192);
+  }
   li {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-size: medium;

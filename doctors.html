@@ -14,11 +14,18 @@
                 flex-wrap: wrap;
                 flex-direction: row;
                 column-gap: 10em;
-                margin: 30px 50px;
+                margin: 20px 50px;
             }
             .card img {
                 width: 100%;
                 object-fit: cover;
+            }
+            .card {
+                transition: all 0.3s ease-in-out;
+            }
+            .card:hover {
+                transform: scale(1.1);
+                cursor: pointer;
             }
         </style>
     </head>

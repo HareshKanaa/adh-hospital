@@ -2,21 +2,56 @@
 <html>
     <head>
         <title>Doctors</title>
+        <link rel="stylesheet" href="styles/card.css">
+        <style>
+            h5, p {
+                margin: 0px 0px;
+            }
+            .doctors {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                flex-wrap: wrap;
+                flex-direction: row;
+                column-gap: 10em;
+                margin: 20px 50px;
+            }
+            .card img {
+                width: 100%;
+                object-fit: cover;
+            }
+            .card {
+                transition: all 0.3s ease-in-out;
+            }
+            .card:hover {
+                transform: scale(1.1);
+                cursor: pointer;
+            }
+        </style>
     </head>
     <link rel="stylesheet" href="styles/styles.css">
     <body>
-        <ol>
-            <li>Dr. Barry M. Brenner (United States)</li><br>
-            <li>Dr. Richard J. Glassock (United States)</li><br>
-            <li>Dr. Giuseppe Remuzzi (Italy)</li><br>
-            <li>Dr. Adeera Levin (Canada)</li><br>
-            <li>Dr. Karl Skorecki (Canada/Israel)</li><br>
-            <li>Dr. Vivekanand Jha (India)</li><br>
-            <li>Dr. Alan S. L. Yu (United States)</li><br>
-            <li>Dr. Detlef O. Schlöndorff (Germany/United States)</li><br>
-            <li>Dr. Mark E. Rosenberg (United States)</li><br>
-            <li>Dr. William G. Couser (United States)</li><br>    
-        </ol>
-        <img src="images/doctor.jpg" class="doctor" alt="doctor">
+        <h4>Our Doctors</h4>
+        <div class="doctors">
+            <div class="card">
+                <img alt="" data-src="https://www.sriramakrishnahospital.com/wp-content/uploads/2020/09/Dr.-N.-CHEZHIYAN_001.webp" class=" lazyloaded" src="https://www.sriramakrishnahospital.com/wp-content/uploads/2020/09/Dr.-N.-CHEZHIYAN_001.webp"><noscript><img src="https://www.sriramakrishnahospital.com/wp-content/uploads/2020/09/Dr.-N.-CHEZHIYAN_001.webp" alt="" /></noscript>
+                <div class="content">
+                    <h5 class="card-text">Dr. N. CHEZHIYAN</h5>
+                    <p style="margin:15px 10px" class="card-text">
+                    MBBS., MD., DM (Nephrology)	Consultant Nephrologist &amp; HOD</p>
+                </div>
+            </div>
+            <div class="card">
+                <img alt="Kidney Specialist In Coimbatore - Sri Ramakrishna Hospital" data-src="https://www.sriramakrishnahospital.com/wp-content/uploads/2020/09/neph3-1.png" class=" lazyloaded" src="https://www.sriramakrishnahospital.com/wp-content/uploads/2020/09/neph3-1.png"><noscript><img src="https://www.sriramakrishnahospital.com/wp-content/uploads/2020/09/neph3-1.png" alt="Kidney Specialist In Coimbatore - Sri Ramakrishna Hospital" /></noscript>
+                <div class="content">
+                    <h5 class="card-text">Dr. G. MADHU SHANKAR</h5>
+                    <p style="margin:15px 10px" class="card-text">
+                    MD, DM(Nephro) (AIIMS), SCH(ASH), Clinical Fellowship (Toronto)	 Consultant Nephrologist</p>
+                
+                </div>
+
+        </div>
+        
+        <img src="images/doctor.jpg" class="background-img" alt="doctor">
     </body>
 </html> 

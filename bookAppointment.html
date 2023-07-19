@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="styles/styles.css">
+  <link rel="stylesheet" href="styles/form.css">
+</head>
+<body>
+  <img src="images/facilities.jpg" alt="" class="background-img">
+  <main>
+    <form action="">
+      <div class="title">
+        <h1>Book Appointment</h1>
+        <hr>
+      </div>
+      <div class="appointment-details">
+
+        <div class="input-row">
+          <input type="text" placeholder="First name" name="first-name" id="first-name" required>
+        </div>
+        <div class="input-row">
+          <input type="text" placeholder="Last name" name="last-name" id="last-name" required>
+        </div>
+        <div class="input-row">
+          <input type="email" placeholder="Email" name="email" id="email" required>
+        </div>
+        <div class="input-row">
+          <input type="text" placeholder="Phone number" name="phone-number" id="phone-number" required>
+        </div>
+
+        <div class="input-row">
+          <label for="date" style="font-size: medium;">Date:</label>
+          <input type="date" placeholder="Date" name="date" id="date" required style="">
+        </div>
+        <div class="input-row">
+          <label for="time">Time:</label>
+          <input type="time" placeholder="Time" name="time" id="time" required>
+        </div>
+      </div>
+
+      <div class="gender-container">
+        <!-- radio button for gender -->
+        <div class="gender-category">
+          <input type="radio" name="gender" id="male" >
+          <label for="male">Male</label>
+        </div>
+        <div class="gender-category">
+          <input type="radio" name="gender" id="female" >
+          <label for="female">Female</label>
+        </div>
+        <div class="gender-category">
+          <input type="radio" name="gender" id="other" >
+          <label for="other">Prefer not to say</label>
+        </div>
+      </div>
+      <div class="doctor-details input-row" >
+        <label for="doctors">Choose a doctor:</label>
+        <select name="doctors" id="doctor" required>
+          <option hidden disabled selected value> Select an Doctor  </option>>
+          <option value="madhu">Dr. G. Madhu Shankar</option>
+          <option value="chezhiyan">Dr. N. Chezhiyan</option>
+        </select>
+      </div>
+      
+      <div class="title">
+        <h1>Address details</h1>
+        <hr>
+      </div>
+      <div class="address-details">
+        <div class="input-row">
+          <select required>
+            <option hidden disabled selected value> Country </option>>
+            <option>India</option>
+            <option>USA</option>
+            <option>UK</option>
+          </select>
+        </div>
+        <div class="input-row">
+          <select required>
+            <option hidden disabled selected value> State </option>>
+            <option>Karnataka</option>
+            <option>TamilNadu</option>
+            <option>Florida</option>
+            <option>California</option>
+            <option>England</option>
+          </select>
+        </div>
+        <div class="input-row">
+          <select name="cities" id="city" required>
+            <option hidden disabled selected value> City </option>>
+            <option>Coimbatore</option>
+            <option>Chennai</option>
+            <option>Bengaluru</option>
+            <option>Mysore</option>
+            <option>Miami</option>
+            <option>Los Angeles</option>
+            <option>San Francisco</option>
+            <option>London</option>
+          </select>
+        </div>
+        <div class="input-row">
+          <input type="text" placeholder="Zip code" name="zip-code" id="zip-code" required>
+        </div>
+        <div class="input-row">
+          <input type="text" placeholder="Address" name="address" id="address">
+        </div>
+      </div>
+      <input type="submit" class="btn" value="Book Appointment"></input> 
+    </form>
+  </main>
+</body>
+</html>

@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./styles/carousal.css">
+  <link rel="stylesheet" href="./styles/card.css">
+  <link rel="stylesheet" href="./styles/styles.css">
+  <style>
+      body , frame {
+        background-color: rgb(225, 215, 192);
+      }
+    .heading {
+      text-align: center;
+      font-family: "Montserrat",Georgia, 'Times New Roman', Times, serif;
+      color: rgb(0, 0, 0);
+    }
+    .heading p {
+      margin: 0.2em 0 2rem 0;
+    }
+    .heading h4 {
+      margin: 0;
+      font-size: 3rem;
+    }
+    p {
+      color: rgb(244, 130, 96);
+      font-weight: bold;
+    }
+    .card img {
+      width: 100%;
+      height: 50%;
+      aspect-ratio: 5/3;
+      object-fit: cover;
+  }
+  .slider-wrapper {
+    position: relative;
+    max-width: 14em;
+    max-height: 21em;
+    margin: 0 auto;
+    transition: all 0.3s ease-in-out;
+  }
+  .slider-wrapper:hover {
+      transform: scale(1.1);
+      cursor: pointer;
+  }
+  .slider {
+    display: flex;
+    aspect-ratio: 2/3;
+    overflow-x: auto;  
+    scroll-snap-type: x mandatory;
+    scroll-behavior: smooth;
+    box-shadow: 0 1.5rem 3rem -0.75rem hsla(0, 0%, 0%, 0.25);
+    border-radius: 0.5rem;
+    -ms-overflow-style: none; /* Hide scrollbar IE and Edge */
+    scrollbar-width: none; /* Hide scrollbar Firefox */
+  }
+  </style>
+
+  <title>Document</title>
+</head>
+<body>
+  <img src="images/receptionist.jpg" alt="" class="background-img">
+  <div class="heading">
+    <h4>ADH Services</h4> 
+    <p>Your go-to source for expert guidance on health and wellness</p>
+  </div>
+  <main>
+    <section class="container">
+      <div class="slider-wrapper">
+        <div class="slider">
+
+          <section class="card" id="slide-1">
+            <img src="https://www.narayanahealth.org/sites/all/themes/nh_default_theme/images/resize-image/cancer-min.jpg">
+            <article class="content">
+              <h5>Cancer</h5>
+              <hr>
+              <p>
+                Understanding Cancer Basics of Cancer Diagnosis and Treatment
+              </p>
+            </article>
+            <div class="footer">
+              <a href="">READ MORE</a>
+              <hr>
+            </div>
+          </section>
+
+          <section class="card" id="slide-2">
+            <img src="https://www.narayanahealth.org/sites/all/themes/nh_default_theme/images/resize-image/urinary-system-min.jpg">
+            <article class="content">
+              <h5>Prostate Cancer</h5>
+              <hr>
+              <p>
+                lorem ipsum dujhsdjfh sdfikj kjhrfgkd dfsughku hiuhjk
+              </p>
+            </article>
+            <div class="footer">
+              <a href="">READ MORE</a>
+              <hr>
+            </div>
+          </section>
+
+          <section class="card" id="slide-3">
+            <img src="https://hospital.narayanahealth.org/pulmonary-embolism/inc/img/img-28_mobile.jpg">
+            <article class="content">
+              <h5>Pulmonary</h5>
+              <hr>
+              <p>
+                lorem ipsum dujhsdjfh sdfikj kjhrfgkd dfsughku hiuhjk
+              </p>
+            </article>
+            <div class="footer">
+              <a href="">READ MORE</a>
+              <hr>
+            </div>
+          </section>
+        </div>
+        <div class="slider-nav">
+          <a href="#slide-1"> </a>
+          <a href="#slide-2"> </a>
+          <a href="#slide-3"> </a>
+        </div>
+      </div>
+    </section>
+
+      <section class="container">
+      <div class="slider-wrapper">
+        <div class="slider">
+
+          <section class="card" id="slide-21">
+            <img src="https://hospital.narayanahealth.org/pulmonary-embolism/inc/img/img-28_mobile.jpg">
+            <article class="content">
+              <h5>Pulmonary Embolism</h5>
+              <hr>
+              <p>
+                lorem ipsum dujhsdjfh sdfikj kjhrfgkd dfsughku hiuhjk
+              </p>
+            </article>
+            <div class="footer">
+              <a href="">READ MORE</a>
+              <hr>
+            </div>
+          </section>
+
+          <section class="card" id="slide-22">
+            <img src="https://www.narayanahealth.org/sites/all/themes/nh_default_theme/images/resize-image/bone-marrow-min.jpg">
+            <article class="content">
+              <h5>Bone Marrow Transplant</h5>
+              <hr>
+              <p>
+                lorem ipsum dujhsdjfh sdfikj kjhrfgkd dfsughku hiuhjk
+              </p>
+            </article>
+            <div class="footer">
+              <a href="">READ MORE</a>
+              <hr>
+            </div>
+          </section>
+
+          <section class="card" id="slide-23">
+            <img src="https://www.narayanahealth.org/sites/all/themes/nh_default_theme/images/resize-image/gastrectomy-bariatric-surgery-min.jpg">
+            <article class="content">
+              <h5>bariatic surgery</h5>
+              <hr>
+              <p>
+                lorem ipsum dujhsdjfh sdfikj kjhrfgkd dfsughku hiuhjk
+              </p>
+            </article>
+            <div class="footer">
+              <a href="">READ MORE</a>
+              <hr>
+            </div>
+          </section>
+        </div>
+        <div class="slider-nav">
+          <a href="#slide-21"> </a>
+          <a href="#slide-22"> </a>
+          <a href="#slide-23"> </a>
+        </div>
+      </div>
+    </section>
+
+    <section class="container">
+      <div class="slider-wrapper">
+        <div class="slider">
+
+          <section class="card" id="slide-31">
+            <img src="https://www.narayanahealth.org/sites/all/themes/nh_default_theme/images/pillar/abdominal.jpg">
+            <article class="content">
+              <h5>Abdominal pain</h5>
+              <hr>
+              <p>
+                lorem ipsum dujhsdjfh sdfikj kjhrfgkd dfsughku hiuhjk
+              </p>
+            </article>
+            <div class="footer">
+              <a href="">READ MORE</a>
+              <hr>
+            </div>
+          </section>
+
+          <section class="card" id="slide-32">
+            <img src="https://www.narayanahealth.org/sites/all/themes/nh_default_theme/images/pillar/abdominal.jpg">
+            <article class="content">
+              <h5>Renal</h5>
+              <hr>
+              <p>
+                lorem ipsum dujhsdjfh sdfikj kjhrfgkd dfsughku hiuhjk
+              </p>
+            </article>
+            <div class="footer">
+              <a href="">READ MORE</a>
+              <hr>
+            </div>
+          </section>
+
+          <section class="card" id="slide-33">
+            <img src="https://hospital.narayanahealth.org/pulmonary-embolism/inc/img/img-28_mobile.jpg">
+            <article class="content">
+              <h5>Pulmonary</h5>
+              <hr>
+              <p>
+                lorem ipsum dujhsdjfh sdfikj kjhrfgkd dfsughku hiuhjk
+              </p>
+            </article>
+            <div class="footer">
+              <a href="">READ MORE</a>
+              <hr>
+            </div>
+          </section>
+        </div>
+        <div class="slider-nav">
+          <a href="#slide-31"> </a>
+          <a href="#slide-32"> </a>
+          <a href="#slide-33"> </a>
+        </div>
+      </div>
+    </section>
+  </main>
+</body>
+</html>

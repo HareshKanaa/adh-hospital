@@ -1,19 +1,15 @@
 <!DOCTYPE html>
 <html>
-  <style>
-  .head {
-    background-image: url("images/head.png")
-  } 
-</style>
 <head>
   <title>ADH Hospitals</title>
   <link rel="icon" href="images/logo-removebg-preview.png" type="image/x-icon">  
+  <link rel="stylesheet" href="styles/styles.css">
 </head>
-<frameset rows="18%, 80%">
-<frame src="header.html" class="head" name="header" noresize="noresize" style="background-color: rgb(157, 160, 247);" >
-  <frameset cols="18%, 80%">
-    <frame src="sidebar.html" name="sidebar" noresize="noresize" style="background-color: rgb(225, 215, 192) ;">
-    <frame src="homenew.html" name="content">
+<frameset rows="14%, 80%" border="4px">
+<frame src="header.html" class="head" name="header" noresize="noresize" >
+  <frameset cols="18%, 82%" border="0">
+    <frame src="sidebar.html" name="sidebar" noresize="noresize">
+    <frame src="home.html" name="content">
   </frameset>
 </frameset>
 </html>

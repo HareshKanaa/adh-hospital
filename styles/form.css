@@ -1,3 +1,13 @@
+* , label{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-size: medium;
+  font-style: "Popins", sans-serif;
+}
+body {
+  width: 100vw;
+}
 form {
   border-radius: 5px;
   /* allign at page center */
@@ -5,44 +15,51 @@ form {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  width: 40%;
+  width: 100%;
+  max-width: 500px;
   background-color: #e7e4ddb8;
   padding: 20px;
+  align-items: center;
   box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.5);
 }
-.appointment-details, .address-details {
-  flex: 1 0 100%;
+.appointment-details , .address-details{
   display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  flex-wrap: wrap;
-  /* background-color: azure; */
-  column-gap: 0;
-  margin: 0.2em 0 0.1em 0;
-  padding: 0;
-}
-input {
-  flex: 1 1;
-  padding: 5px 10px;
-  margin: 3px;
-  border-radius: 5px;
-  border: 0px solid black;
-}
-.input-row {
-  flex: 1 0 100%;
-  width: 100%;
-  display: flex;
-  flex-direction: row;
   justify-content: space-between;
   align-items: center;
   flex-wrap: wrap;
-  column-gap: 0.7em;
-  /* background-color: azure; */
+  gap: 6px;
+  margin: 0.4em 0 0.4em 0;
+  padding: 0;
+}
+
+.input-row {
+  flex: 1;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 0.7em;
 } 
+input, select, #time, #date {
+  flex: 1;
+  padding: 5px 10px;
+  border-radius: 5px;
+  border: 1px solid black;
+}
+.gender-container {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  gap: 3.6em;
+  margin: 0.4em 0;
+}
+
+
 .btn {
-  margin: 10px;
-  width: 95%;
+  margin: 10px 0;
+  width: 100%;
+  padding: 10px;
   border-radius: 5px;
   border: none;
   background-color: #258b9b;
@@ -56,22 +73,36 @@ input {
 .btn:active {
   background-color: #1e7e72;
 }
-select {
-  margin: 10px;
-  padding: 10px;
+select, #time, #date{
+  padding: 5px;
+  text-align: center;
+  min-width: 100px;
   border-radius: 5px;
+  font-size: 16px;
   border: 1px solid black;
 }
 option {
   padding: 10px;
 }
-h3 {
-  margin: 0;
+form .title h1 {
+  margin: 10px 0;
   padding: 0;
+  font-size: x-large;
 }
 hr {
   width: 40%;
   margin: 0.4em 0;
   padding: 0;
   border-bottom: 1px solid rgba(124, 62, 0, 0.5);
+}
+.title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  flex-direction: column;
+}
+
+label {
+  font: 16px "Popins", sans-serif;
 }
